@@ -1,4 +1,4 @@
-package com.pass-services.test;
+package com.passservices.test;
 
 import org.junit.Before;
 import org.junit.Test;
