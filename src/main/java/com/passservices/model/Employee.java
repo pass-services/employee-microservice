@@ -1,4 +1,4 @@
-package com.pass-services.model;
+package com.passservices.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
