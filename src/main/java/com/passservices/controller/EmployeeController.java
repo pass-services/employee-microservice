@@ -1,4 +1,4 @@
-package com.pass-services.controller;
+package com.passservices.controller;
 
 import java.util.List;
 
