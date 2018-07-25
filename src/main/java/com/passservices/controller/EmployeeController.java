@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.HttpStatus;
 
-import com.pass-services.model.Employee;
-import com.pass-services.repository.EmployeeRepository;
+import com.passservices.model.Employee;
+import com.passservices.repository.EmployeeRepository;
 
 @RestController
 public class EmployeeController {
