@@ -1,4 +1,4 @@
-package com.pass-services.config;
+package com.passservices.config;
 
 import javax.sql.DataSource;
 
