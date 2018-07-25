@@ -1,4 +1,4 @@
-package com.pass-services;
+package com.passservices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
