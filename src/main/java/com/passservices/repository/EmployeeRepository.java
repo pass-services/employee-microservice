@@ -1,4 +1,4 @@
-package com.pass-services.repository;
+package com.passservices.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
