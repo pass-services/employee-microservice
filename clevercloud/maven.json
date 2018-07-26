@@ -1,5 +1,5 @@
 {
     "deploy": {
-      "goal": "cargo:run"
+      "goal": "cargo:deploy"
     }
  }
