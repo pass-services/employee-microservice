@@ -1,7 +1,7 @@
 {
   "build": {
     "type": "maven",
-    "goal": "build"
+    "goal": "package"
   },
   "deploy": {
     "goal": "build/libs/employee-microservice-0.0.1-SNAPSHOT.jar"
