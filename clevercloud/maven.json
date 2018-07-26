@@ -1,5 +1,5 @@
 {
     "deploy": {
-      "goal": "cargo:install"
+      "goal": "spring-boot:run"
     }
  }
