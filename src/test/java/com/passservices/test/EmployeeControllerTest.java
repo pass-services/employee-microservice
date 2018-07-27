@@ -37,7 +37,7 @@ public class EmployeeControllerTest {
 
     @Test
     public void whenCreateGetEmployee_thenOk() throws Exception {
-        String employeeJson = "{{\"firstName\":\"john\"},{\"lastName\":\"Do\"},{\"birthDate\":\"1978-02-03\"},{\"securityId\":\"GDUSK675764GDJS\"}}";
+        String employeeJson = "{\"firstName\":\"john\",\"lastName\":\"Do\",\"birthDate\":\"1978-02-03\",\"securityId\":\"GDUSK675764GDJS\"}";
 
         this.mockMvc.perform(post("/employees").contentType(CONTENT_TYPE).content(employeeJson)).andExpect(status().isCreated());
 
