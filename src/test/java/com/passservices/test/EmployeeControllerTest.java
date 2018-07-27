@@ -37,10 +37,10 @@ public class EmployeeControllerTest {
 
     @Test
     public void whenCreateGetEmployee_thenOk() throws Exception {
-        String employeeJson = "{\"name\":\"john\"}";
+        String employeeJson = "{{\"firstName\":\"john\"},{\"lastName\":\"Do\"},{\"birthDate\":\"02/03/1978\"},{\"securityId\":\"GDUSK675764GDJS\"}}";
 
         this.mockMvc.perform(post("/employees").contentType(CONTENT_TYPE).content(employeeJson)).andExpect(status().isCreated());
 
-        this.mockMvc.perform(get("/employees")).andExpect(status().isOk()).andExpect(content().contentType(CONTENT_TYPE)).andExpect(jsonPath("$", hasSize(2))).andExpect(jsonPath("$[0].name", is("ana"))).andExpect(jsonPath("$[1].name", is("john")));
+        this.mockMvc.perform(get("/employees")).andExpect(status().isOk()).andExpect(content().contentType(CONTENT_TYPE)).andExpect(jsonPath("$", hasSize(2))).andExpect(jsonPath("$[0].firstName", is("ana"))).andExpect(jsonPath("$[1].firstName", is("john")));
     }
 }
