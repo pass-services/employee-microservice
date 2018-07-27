@@ -1,1 +1,1 @@
-create table employee(id int identity primary key, name varchar(30));
+create table employee(id int identity primary key, firstName varchar(30), lastName varchar(30), birthDate Date, securityId varchar(30));
