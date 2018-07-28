@@ -20,6 +20,9 @@ public class Employee {
     @Temporal(TemporalType.DATE)
     private Date birthDate;
     private String securityId;
+    private String identityId;
+    @Temporal(TemporalType.DATE)
+    private Date expirationDate;
 
     public Employee() {
     }
@@ -88,6 +91,55 @@ public class Employee {
 	 */
 	public void setSecurityId(String securityId) {
 		this.securityId = securityId;
+	}
+
+	/**
+	 * @return the identityId
+	 */
+	public String getIdentityId() {
+		return identityId;
+	}
+
+	/**
+	 * @param identityId the identityId to set
+	 */
+	public void setIdentityId(String identityId) {
+		this.identityId = identityId;
+	}
+
+	/**
+	 * @return the expirationDate
+	 */
+	public Date getExpirationDate() {
+		return expirationDate;
+	}
+
+	/**
+	 * @param expirationDate the expirationDate to set
+	 */
+	public void setExpirationDate(Date expirationDate) {
+		this.expirationDate = expirationDate;
+	}
+
+	/**
+	 * @param id
+	 * @param firstName
+	 * @param lastName
+	 * @param birthDate
+	 * @param securityId
+	 * @param identityId
+	 * @param expirationDate
+	 */
+	public Employee(long id, String firstName, String lastName, Date birthDate, String securityId, String identityId,
+			Date expirationDate) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.birthDate = birthDate;
+		this.securityId = securityId;
+		this.identityId = identityId;
+		this.expirationDate = expirationDate;
 	}
 
 }

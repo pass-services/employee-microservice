@@ -37,10 +37,14 @@ public class EmployeeControllerTest {
 
     @Test
     public void whenCreateGetEmployee_thenOk() throws Exception {
-        String employeeJson = "{\"firstName\":\"john\",\"lastName\":\"Do\",\"birthDate\":\"1978-02-03\",\"securityId\":\"GDUSK675764GDJS\"}";
+        String employeeJson = "{\"firstName\":\"John\",\"lastName\":\"Do\",\"birthDate\":\"1978-02-03\",\"securityId\":\"GDUSK675764GDJS\"}";
 
         this.mockMvc.perform(post("/employees").contentType(CONTENT_TYPE).content(employeeJson)).andExpect(status().isCreated());
+        
+        String employee2Json = "{\"firstName\":\"Mary\",\"lastName\":\"Shelley\",\"birthDate\":\"1982-05-03\",\"securityId\":\"JSUSJK675764GDJS\",\"FR57755820920\",\"2014-12-11\"}";
 
-        this.mockMvc.perform(get("/employees")).andExpect(status().isOk()).andExpect(content().contentType(CONTENT_TYPE)).andExpect(jsonPath("$", hasSize(2))).andExpect(jsonPath("$[0].firstName", is("ana"))).andExpect(jsonPath("$[1].firstName", is("john")));
+        this.mockMvc.perform(post("/employees").contentType(CONTENT_TYPE).content(employee2Json)).andExpect(status().isCreated());
+
+        this.mockMvc.perform(get("/employees")).andExpect(status().isOk()).andExpect(content().contentType(CONTENT_TYPE)).andExpect(jsonPath("$", hasSize(2))).andExpect(jsonPath("$[0].firstName", is("Ana"))).andExpect(jsonPath("$[1].firstName", is("John"))).andExpect(jsonPath("$[1].firstName", is("Mary")));
     }
 }
