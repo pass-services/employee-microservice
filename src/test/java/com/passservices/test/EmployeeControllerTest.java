@@ -45,6 +45,6 @@ public class EmployeeControllerTest {
 
         this.mockMvc.perform(post("/employees").contentType(CONTENT_TYPE).content(employee2Json)).andExpect(status().isCreated());
 
-        this.mockMvc.perform(get("/employees")).andExpect(status().isOk()).andExpect(content().contentType(CONTENT_TYPE)).andExpect(jsonPath("$", hasSize(2))).andExpect(jsonPath("$[0].firstName", is("Ana"))).andExpect(jsonPath("$[1].firstName", is("John"))).andExpect(jsonPath("$[1].firstName", is("Mary")));
+        this.mockMvc.perform(get("/employees")).andExpect(status().isOk()).andExpect(content().contentType(CONTENT_TYPE)).andExpect(jsonPath("$", hasSize(3))).andExpect(jsonPath("$[0].firstName", is("Ana"))).andExpect(jsonPath("$[1].firstName", is("John"))).andExpect(jsonPath("$[1].firstName", is("Mary")));
     }
 }
