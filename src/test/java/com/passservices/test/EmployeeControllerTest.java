@@ -41,7 +41,7 @@ public class EmployeeControllerTest {
 
         this.mockMvc.perform(post("/employees").contentType(CONTENT_TYPE).content(employeeJson)).andExpect(status().isCreated());
         
-        String employee2Json = "{\"firstName\":\"Mary\",\"lastName\":\"Shelley\",\"birthDate\":\"1982-05-03\",\"securityId\":\"JSUSJK675764GDJS\",\"FR57755820920\",\"2014-12-11\"}";
+        String employee2Json = "{\"firstName\":\"Mary\",\"lastName\":\"Shelley\",\"birthDate\":\"1982-05-03\",\"securityId\":\"JSUSJK675764GDJS\",\"identityId\":\"FR57755820920\",\"expirationDate\":\"2014-12-11\"}";
 
         this.mockMvc.perform(post("/employees").contentType(CONTENT_TYPE).content(employee2Json)).andExpect(status().isCreated());
 
