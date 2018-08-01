@@ -1,1 +1,1 @@
-insert into employee(firstName,lastName,birthDate,securityId,identityId,expirationDate) values ('Ana','Mitchell','1976-02-01','GHY55572728GH','FR677292092017','2015-06-05');
+insert into employee(firstName,lastName,securityId,identityId) values ('Ana','Mitchell','GHY55572728GH','FR677292092017');
