@@ -1,0 +1,5 @@
+{
+  "name": "Employee Microservice",
+  "description": "An eployee microservice developed in SpringBoot, which can easily be deployed to Heroku.",
+  "addons": [ "heroku-postgresql" ]
+}
