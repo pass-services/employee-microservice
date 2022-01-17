@@ -127,9 +127,9 @@
                         	<artifactItems>
                             	<artifactItem>
                                 	<groupId>com.heroku</groupId>
-                                	<artifactId>webapp-runner</artifactId>
+                                	<artifactId>employee-microservice</artifactId>
                                 	<version>9.0.52.1</version>
-                                	<destFileName>webapp-runner.jar</destFileName>
+                                	<destFileName>employee-microservice.jar</destFileName>
                             	</artifactItem>
                         	</artifactItems>
                     	</configuration>
