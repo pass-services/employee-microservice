@@ -31,4 +31,10 @@ public class EmployeeController {
     public List<Employee> getEmployees() {
         return employeeRepository.findAll();
     }
+    
+    @PutMapping("/employees")
+    @ResponseStatus(HttpStatus.UPDATED)
+    public void updateEmployee(@RequestBody Employee employee) {
+        employeeRepository.update(employee);
+    }
 }
