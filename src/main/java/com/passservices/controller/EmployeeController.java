@@ -34,7 +34,7 @@ public class EmployeeController {
     }
     
     @PutMapping("/employees")
-    @ResponseStatus(HttpStatus.UPDATED)
+    @ResponseStatus(HttpStatus.OK)
     public void updateEmployee(@RequestBody Employee employee) {
         employeeRepository.save(employee);
     }
