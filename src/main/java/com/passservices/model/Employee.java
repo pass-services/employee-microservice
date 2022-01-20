@@ -27,12 +27,32 @@ public class Employee {
     public Employee() {
     }
 
+    public Employee(long id, String firstName, String lastName, Date birthDate) {
+        super();
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthDate = birthDate;
+	this.securityId = securityId;
+    }
+
     public Employee(long id, String firstName, String lastName, Date birthDate, String securityId) {
         super();
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
+	this.securityId = securityId;
+    }
+
+    public Employee(long id, String firstName, String lastName, Date birthDate, String securityId, String identityId) {
+        super();
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthDate = birthDate;
+	this.securityId = securityId;
+	this.identityId = identityId;
     }
 
     public long getId() {
